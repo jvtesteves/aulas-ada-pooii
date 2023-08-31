@@ -11,6 +11,7 @@ public class Sorteador {
     }
 
     public String sortear() {
+
         if (this.elementos.isEmpty()) {
             return "A lista está vazia.";
         } else {
@@ -20,17 +21,16 @@ public class Sorteador {
         }
     }
 
-    public static void main(String[] args) {
-        List<String> elementos = new ArrayList();
-        elementos.add("banana");
-        elementos.add("maçã");
-        elementos.add("abacate");
-        elementos.add("tomate");
-        Sorteador sorteador = new Sorteador(elementos);
+//    public static void main(String[] args) {
+//        List<String> elementos = new ArrayList();
+//
+//        if (elementos.isEmpty()) {
+//            return "A lista está vazia.";
+//        }
+//
+//        int index = (int) (Math.random() * elementos.size());
+//        String sorteado = elementos.remove(index);
+//        return sorteado;
+//    }
 
-        while(!elementos.isEmpty()) {
-            System.out.println("Elemento sorteado: " + sorteador.sortear());
-        }
-
-    }
 }
